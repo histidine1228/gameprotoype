@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Patient Case</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- floating hearts container -->
+  <div id="heart-layer"></div>
+
+  <!-- SCREEN 1 -->
+  <section class="card active" id="screen-1">
+    <h2>Patient Case File</h2>
+
+    <p><strong>Patient:</strong> Priyansh Pattjoshi</p>
+    <p><strong>Attending Physician:</strong> Dr. Simu Kaur 🩺</p>
+
+    <div class="button-center">
+      <button onclick="goTo(1)">Open Case</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 2 -->
+  <section class="card" id="screen-2">
+    <h2>Chief Complaint</h2>
+
+    <p>
+      Persistent warmth in the chest when thinking about one incredibly
+      intelligent, kind, and beautiful future doctor. 
+    </p>
+
+    <div class="button-center">
+      <button onclick="goTo(2)">Review Symptoms</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 3 -->
+  <section class="card" id="screen-3">
+    <h2>Symptoms</h2>
+
+    <ul>
+      <li>Smiling for no reason</li>
+      <li>Feeling calm just by hearing your voice</li>
+      <li>Wanting to share every good moment</li>
+      <li>Complete certainty you’re my favorite person</li>
+    </ul>
+
+    <div class="button-center">
+      <button onclick="goTo(3)">Assessment</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 4 -->
+  <section class="card" id="screen-4">
+    <h2>Assessment</h2>
+
+    <p>
+      Condition appears chronic and irreversible. Patient reports feeling
+      safe, supported, and genuinely happy in the physician’s presence.
+    </p>
+
+    <div class="button-center">
+      <button onclick="goTo(4)">Final Recommendation</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 5 -->
+  <section class="card" id="screen-5">
+    <h2>Final Recommendation</h2>
+
+    <p>
+      Proceed with Valentine’s Day together. Encourage laughter, shared meals,
+      and uninterrupted time. Does the doctor accept to be the patient's valentine?
+    </p>
+
+    <div class="button-center gap">
+      <button onclick="acceptCase()">Accept 💌</button>
+      <button class="secondary" onclick="rejectCase()">Decline Treatment ❌</button>
+    </div>
+  </section>
+
+  <!-- HIPPOCRATIC OATH -->
+  <section class="card" id="screen-oath">
+    <h2>Hippocratic Oath</h2>
+
+    <p class="quote">“First, do no harm.”</p>
+
+    <div class="oath-box">
+      <p>
+        By rejecting this patient, you may be in violation of your professional
+        obligation to:
+      </p>
+      <ul>
+        <li>Prevent emotional harm</li>
+        <li>Promote wellbeing</li>
+        <li>Support long-term prognosis</li>
+      </ul>
+      <p>Please reconsider the recommended treatment plan.</p>
+    </div>
+
+    <div class="button-center">
+      <button onclick="forceAccept()">Reassess Treatment Plan</button>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="card" id="screen-final">
+    <h2>Case Closed ❤️</h2>
+
+    <p><strong>Recommendation:</strong> Accepted.</p>
+    <p><strong>Prognosis:</strong> Extremely good.</p>
+  </section>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
